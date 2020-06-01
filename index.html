@@ -28,6 +28,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Install Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body class=" ">
@@ -97,16 +100,13 @@
                             </p>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <label class="d-none">Phone number</label>
+                                    <label v-model="phone" class="d-none">Phone number</label>
                                     <input type="tel" placeholder="Phone number">
                                     <a class="btn btn--primary type--uppercase btn-block mt-4" href="#">
                                         <span class="btn__text">
                                             Text Me
                                         </span>
                                     </a>
-                                </div>
-                                <div class="col-md-4">
-
                                 </div>
                             </div>
 
@@ -192,26 +192,25 @@
                     <li class="active">
                         <div class="tab__title text-center">
                             <i class="icon icon--sm block icon-Target-Market"></i>
-                            <span class="h5">Code Quality</span>
+                            <span class="h5">SMS Text</span>
                         </div>
                         <div class="tab__content">
                             <div class="container switchable switchable--switch">
                                 <div class="row">
                                     <div class="col-md-7">
-                                        <img alt="Image" src="img/device-6.png" />
+                                        <img class="float-right" style="max-height: 550px;" alt="Image"
+                                            src="custom/iphone-hgalerts.png" />
                                     </div>
                                     <div class="col-md-5 col-lg-4">
                                         <div class="mt--1">
-                                            <h3>Experience quality</h3>
+                                            <h3>Text Alerts</h3>
                                             <p class="lead">
-                                                Stack is built with customization and ease-of-use at its core &mdash;
-                                                whether you're a seasoned developer or just starting out, you'll be
-                                                making attractive sites faster than any traditional HTML template.
+                                                Get a text alert when an HG game is about to start.
                                             </p>
                                             <hr class="short" />
                                             <p>
-                                                Each purchase of Stack includes six months of free support and lifetime
-                                                free content and bug-fix updates.
+                                                Your data is kept safe, secure, and locked from the outside world. Learn
+                                                more about our <a href="#">privacy policy.</a>
                                             </p>
                                         </div>
                                     </div>
@@ -224,7 +223,7 @@
                     <li>
                         <div class="tab__title text-center">
                             <i class="icon icon--sm block icon-Text-Effect"></i>
-                            <span class="h5">Visual Design</span>
+                            <span class="h5">Discord</span>
                         </div>
                         <div class="tab__content">
                             <div class="container">
@@ -234,16 +233,13 @@
                                     </div>
                                     <div class="col-md-5 col-lg-4">
                                         <div class="mt--1">
-                                            <h3>Experience quality</h3>
+                                            <h3>Discord</h3>
                                             <p class="lead">
-                                                Stack is built with customization and ease-of-use at its core &mdash;
-                                                whether you're a seasoned developer or just starting out, you'll be
-                                                making attractive sites faster than any traditional HTML template.
+                                                Set up Discord notifications when an HG game is about to start.
                                             </p>
                                             <hr class="short" />
-                                            <p>
-                                                Each purchase of Stack includes six months of free support and lifetime
-                                                free content and bug-fix updates.
+                                            <p class="muted">
+                                                (Coming soon)
                                             </p>
                                         </div>
                                     </div>
@@ -256,7 +252,7 @@
                     <li>
                         <div class="tab__title text-center">
                             <i class="icon icon--sm block icon-Love-User"></i>
-                            <span class="h5">Stack Experience</span>
+                            <span class="h5">WhatsApp</span>
                         </div>
                         <div class="tab__content">
                             <div class="container">
@@ -266,11 +262,9 @@
                                     </div>
                                     <div class="col-md-5 col-lg-4">
                                         <div class="mt--1">
-                                            <h3>Experience quality</h3>
+                                            <h3>WhatsApp</h3>
                                             <p class="lead">
-                                                Stack is built with customization and ease-of-use at its core &mdash;
-                                                whether you're a seasoned developer or just starting out, you'll be
-                                                making attractive sites faster than any traditional HTML template.
+                                                Get a WhatsApp alert when an HG is about to start.
                                             </p>
                                             <hr class="short" />
                                             <p>
@@ -454,6 +448,9 @@
     <script src="js/spectragram.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    <!--Vue Components-->
+    <script src="/js/components/text-signup.js"></script>
 </body>
 
 </html>
